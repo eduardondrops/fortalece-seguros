@@ -1,100 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fortalece Seguros | Seguro Automotivo</title>
-    <meta name="description" content="Cotação de seguro automotivo rápida e personalizada. Proteja seu carro com o seguro ideal para você." />
-    <meta name="author" content="Fortalece Seguros" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortalece Seguros | Seguro Automotivo</title>
+  <meta name="description" content="Cotação de seguro automotivo rápida e personalizada. Proteja seu carro com o seguro ideal para você.">
+  <meta name="author" content="Fortalece Seguros">
+  <meta property="og:title" content="Fortalece Seguros | Seguro Automotivo">
+  <meta property="og:description" content="Cotação de seguro automotivo rápida e personalizada. Proteja seu carro com o seguro ideal para você.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/logo-fortalece.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@fortaleceseguros">
+  <meta name="twitter:image" content="https://i.postimg.cc/ZnLcfF3N/logo-fortalece.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="css/index-DEBb1S9t.css">
+  <script type="module" crossorigin src="js/index-DvLkEc36.js"></script>
 
-    <meta property="og:title" content="Fortalece Seguros | Seguro Automotivo" />
-    <meta property="og:description" content="Cotação de seguro automotivo rápida e personalizada. Proteja seu carro com o seguro ideal para você." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="images/logo-fortalece.png" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@fortaleceseguros" />
-    <meta name="twitter:image" content="https://i.postimg.cc/ZnLcfF3N/logo-fortalece.png" />
+    header.navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: white;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      z-index: 10;
+    }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    
-    <!-- CSS e scripts do projeto -->
-    <link rel="stylesheet" crossorigin href="css/index-DEBb1S9t.css" />
-    <script type="module" crossorigin src="js/index-DvLkEc36.js"></script>
+    header.navbar img {
+      height: 40px;
+    }
 
-    <!-- Estilos customizados para o cabeçalho e a seção hero -->
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #f6f7fb;
-      }
-      /* Cabeçalho fixo (navbar) */
-      header.navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 10;
-        background-color: #0D2B5F;
-        padding: 20px;
-        text-align: center;
-      }
-      header.navbar img {
-        height: 50px;
-      }
-      /* Seção hero com fundo responsivo e overlay */
+    .hero {
+      position: relative;
+      background-image: url("images/bg-desktop.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      padding: 160px 20px 60px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (max-width: 768px) {
       .hero {
-        position: relative;
-        background-image: url("images/bg-desktop.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        color: white;
-        text-align: center;
-        padding: 60px 20px;
-        margin-top: 90px; /* Espaço para o cabeçalho fixo */
+        background-image: url("images/bg-mobile.jpg");
+        padding-top: 140px;
       }
-      .hero::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.4);
-        z-index: 0;
-      }
-      .hero-content {
-        position: relative;
-        z-index: 1;
-      }
-      @media (max-width: 768px) {
-        .hero {
-          background-image: url("images/bg-mobile.jpg");
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Cabeçalho fixo (navbar) -->
-    <header class="navbar">
-      <img src="images/logo-fortalece.png" alt="Fortalece Seguros" />
-    </header>
+    }
+  </style>
+</head>
 
-    <!-- Seção hero com fundo responsivo -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1 style="font-size: 2.5em; margin-bottom: 10px;">Proteja seu carro com o seguro ideal</h1>
-        <p style="font-size: 1.2em;">
-          Cotação rápida, atendimento humanizado e seguro sob medida para você.
-        </p>
-      </div>
-    </section>
+<body>
+  <header class="navbar">
+    <img src="images/logo-fortalece.png" alt="Fortalece Seguros">
+  </header>
 
-    <div id="root"></div>
+  <section class="hero">
+    <div class="hero-content">
+      <h1 style="font-size: 2.5em; margin-bottom: 10px;">Proteja seu carro com o seguro ideal</h1>
+      <p style="font-size: 1.2em;">Cotação rápida, atendimento humanizado e seguro sob medida para você.</p>
+    </div>
+  </section>
 
-    <!-- Script adicional (conforme sua configuração) -->
-    <script src="js/gptengineer.js" type="module"></script>
-  </body>
+  <div id="root"></div>
+  <script src="js/gptengineer.js" type="module"></script>
+</body>
 </html>

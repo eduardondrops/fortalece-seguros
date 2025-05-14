@@ -26,21 +26,6 @@
       font-family: 'Inter', sans-serif;
     }
 
-    header.navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: white;
-      padding: 10px 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      z-index: 10;
-    }
-
-    header.navbar img {
-      height: 40px;
-    }
-
     .hero {
       position: relative;
       background-image: url("images/bg-desktop.jpg");
@@ -75,9 +60,7 @@
 </head>
 
 <body>
-  <header class="navbar">
-    <img src="images/logo-fortalece.png" alt="Fortalece Seguros">
-  </header>
+  <div id="root"></div>
 
   <section class="hero">
     <div class="hero-content">
@@ -86,7 +69,6 @@
     </div>
   </section>
 
-  <div id="root"></div>
   <script src="js/gptengineer.js" type="module"></script>
 </body>
 </html>
